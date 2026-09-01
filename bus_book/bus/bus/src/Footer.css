@@ -1,0 +1,23 @@
+.footer{
+width:100%;
+margin-top:50px;
+padding:25px 0;
+display:flex;
+justify-content:center;
+align-items:center;
+background:rgba(255,255,255,0.08);
+border-top:1px solid rgba(255,255,255,0.2);
+backdrop-filter:blur(15px);
+box-shadow:0 -10px 30px rgba(0,0,0,0.2);
+}
+.footer p{
+margin:0;
+font-size:17px;
+letter-spacing:0.5px;
+color:#d8efff;
+transition:0.5s ease;
+}
+.footer p:hover{
+color:#7cffcb;
+text-shadow:0 0 15px rgba(124,255,203,0.5);
+}

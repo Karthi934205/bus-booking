@@ -1,0 +1,128 @@
+.search{
+width:85%;
+margin:50px auto;
+padding:35px;
+background:rgba(255,255,255,0.1);
+border:1px solid rgba(255,255,255,0.2);
+border-radius:25px;
+backdrop-filter:blur(18px);
+box-shadow:0 15px 40px rgba(0,0,0,0.3);
+position:relative;
+z-index:1000;
+}
+.search form{
+display:flex;
+align-items:flex-end;
+justify-content:center;
+gap:30px;
+}
+.search section{
+display:flex;
+flex-direction:column;
+gap:10px;
+flex:1;
+}
+.search label{
+font-size:16px;
+font-weight:600;
+color:#7cffcb;
+}
+.autocomplete{
+position:relative;
+z-index:100;
+}
+.search input{
+width:100%;
+padding:15px 20px;
+box-sizing:border-box;
+border-radius:18px;
+border:1px solid rgba(255,255,255,0.25);
+outline:none;
+background:rgba(255,255,255,0.12);
+color:white;
+font-size:16px;
+transition:0.5s ease;
+}
+.search input::placeholder{
+color:#c8dce8;
+}
+.search input:focus{
+border-color:#00d4ff;
+background:rgba(0,212,255,0.12);
+box-shadow:0 0 18px rgba(0,212,255,0.3);
+}
+.suggestions{
+position:absolute;
+top:88px;
+left:0;
+width:100%;
+max-height:220px;
+overflow-y:auto;
+background:rgba(10,35,60,0.97);
+border:1px solid rgba(255,255,255,0.25);
+border-radius:15px;
+z-index:9999;
+box-shadow:0 15px 40px rgba(0,0,0,0.5);
+}
+.suggestions div{
+padding:14px 18px;
+color:white;
+cursor:pointer;
+transition:0.5s ease;
+}
+.suggestions div:hover{
+background:rgba(0,212,255,0.2);
+padding-left:25px;
+}
+.close-suggestion{
+position:absolute;
+right:10px;
+top:8px;
+z-index:10000;
+border:none;
+background:none;
+color:white;
+font-size:18px;
+cursor:pointer;
+}
+.close-suggestion:hover{
+color:#ff7b7b;
+}
+.searchbut{
+flex:0.4!important;
+}
+.searchbut button{
+width:100%;
+padding:15px 25px;
+border:none;
+border-radius:30px;
+font-size:17px;
+font-weight:600;
+cursor:pointer;
+color:white;
+background:linear-gradient(135deg,#00d4ff,#0077ff);
+transition:0.6s ease;
+}
+.searchbut button:hover{
+transform:translateY(-4px);
+box-shadow:0 12px 30px rgba(0,212,255,0.45);
+}
+.searchbut button:active{
+transform:scale(0.95);
+}
+.aside{
+position:relative;
+z-index:1;
+}
+@media(max-width:850px){
+.search{
+width:80%;
+}
+.search form{
+flex-direction:column;
+align-items:stretch;
+}
+.searchbut{
+width:100%;
+}
+}

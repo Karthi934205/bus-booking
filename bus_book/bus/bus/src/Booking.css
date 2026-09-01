@@ -1,0 +1,179 @@
+.booking {
+
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    padding:40px 20px;
+
+    background:
+    linear-gradient(135deg,#020617,#0f3b82);
+
+    color:white;
+}
+
+
+/* Main card effect */
+.booking {
+
+    text-align:center;
+
+}
+
+
+/* Heading */
+.booking h2 {
+
+    font-size:36px;
+
+    margin-bottom:25px;
+
+    color:#93c5fd;
+
+    letter-spacing:1px;
+}
+
+
+/* Bus details card */
+
+.booking h3 {
+
+    width:350px;
+
+    margin:8px;
+
+    padding:12px 20px;
+
+    border-radius:12px;
+
+    background:rgba(255,255,255,0.1);
+
+    border:1px solid rgba(255,255,255,0.15);
+
+    backdrop-filter:blur(12px);
+
+    font-size:18px;
+
+    color:#dbeafe;
+
+}
+
+
+/* Inputs */
+
+.booking input {
+
+    width:350px;
+
+    margin-top:15px;
+
+    padding:14px 18px;
+
+    border-radius:12px;
+
+    border:none;
+
+    outline:none;
+
+    font-size:16px;
+
+    color:white;
+
+    background:rgba(255,255,255,0.12);
+
+    border:1px solid rgba(255,255,255,0.2);
+
+    backdrop-filter:blur(10px);
+
+    transition:.3s;
+
+}
+
+
+.booking input::placeholder {
+
+    color:#cbd5e1;
+
+}
+
+
+.booking input:focus {
+
+    border:1px solid #60a5fa;
+
+    box-shadow:
+    0 0 15px rgba(96,165,250,0.5);
+
+}
+
+
+/* Confirm button */
+
+.booking button {
+
+    width:350px;
+
+    margin-top:25px;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #2563eb,
+        #1d4ed8
+    );
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:
+    0 10px 25px rgba(37,99,235,0.4);
+
+}
+
+
+.booking button:hover {
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 15px 30px rgba(37,99,235,0.6);
+
+}
+
+
+/* Mobile */
+
+@media(max-width:500px){
+
+    .booking h3,
+    .booking input,
+    .booking button {
+
+        width:90%;
+
+    }
+
+
+    .booking h2 {
+
+        font-size:28px;
+
+    }
+
+}

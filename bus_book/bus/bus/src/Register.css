@@ -1,0 +1,114 @@
+.register{
+min-height:80vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:40px 20px;
+}
+.register form{
+width:360px;
+padding:40px;
+display:flex;
+flex-direction:column;
+gap:20px;
+background:rgba(255,255,255,0.1);
+border:1px solid rgba(255,255,255,0.2);
+border-radius:30px;
+backdrop-filter:blur(18px);
+box-shadow:0 20px 50px rgba(0,0,0,0.35);
+}
+.register form div{
+text-align:center;
+}
+.register form img{
+width:80px;
+height:80px;
+object-fit:cover;
+border-radius:50%;
+border:2px solid rgba(255,255,255,0.4);
+box-shadow:0 0 25px rgba(124,255,203,0.45);
+transition:0.6s ease;
+}
+.register form img:hover{
+transform:scale(1.08) rotate(5deg);
+}
+.register h1{
+margin-top:15px;
+font-size:34px;
+letter-spacing:2px;
+background:linear-gradient(90deg,#7cffcb,#00d4ff);
+-webkit-background-clip:text;
+color:transparent;
+}
+.register input{
+padding:15px 18px;
+border-radius:18px;
+border:1px solid rgba(255,255,255,0.25);
+background:rgba(255,255,255,0.12);
+color:white;
+font-size:16px;
+outline:none;
+transition:0.5s ease;
+}
+.register input::placeholder{
+color:#c8dce8;
+}
+.register input:focus{
+border-color:#7cffcb;
+background:rgba(124,255,203,0.12);
+box-shadow:0 0 18px rgba(124,255,203,0.3);
+}
+.register button{
+padding:15px;
+border:none;
+border-radius:30px;
+background:linear-gradient(135deg,#7cffcb,#00d4ff);
+color:#062033;
+font-size:18px;
+font-weight:700;
+cursor:pointer;
+transition:0.6s ease;
+}
+.register button:hover{
+transform:translateY(-4px);
+box-shadow:0 12px 30px rgba(124,255,203,0.4);
+}
+.register button:active{
+transform:scale(0.95);
+}
+.register p{
+text-align:center;
+margin:0;
+color:#c8dce8;
+}
+.register a{
+text-align:center;
+text-decoration:none;
+color:#7cffcb;
+font-size:17px;
+position:relative;
+transition:0.5s ease;
+}
+.register a::after{
+content:"";
+position:absolute;
+height:2px;
+width:0;
+left:50%;
+bottom:-5px;
+background:#00d4ff;
+transform:translateX(-50%);
+transition:0.5s ease;
+}
+.register a:hover{
+color:#00d4ff;
+}
+.register a:hover::after{
+width:100%;
+}
+@media(max-width:500px){
+.register form{
+width:85%;
+padding:30px;
+}
+}
