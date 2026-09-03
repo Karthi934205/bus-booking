@@ -16,7 +16,7 @@ function Nav() {
 
         <section className='section'>
             <img src={logo} alt="" />
-            <h1>BUSGO</h1>
+            <h1>bus book</h1>
         </section>
 
 
